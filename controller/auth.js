@@ -3,8 +3,6 @@ import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 import { config } from '../config.js'
 
-const jwtSecretKey = process.env.JWT_SECRET
-
 export async function signup(req, res) {
     const { 
         username,
